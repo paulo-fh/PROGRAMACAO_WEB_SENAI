@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+:root {
+    --cor0: #0D5EA1;
+    --cor1: #030f30d9;
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serifa;
+    --fonte-oscar: 'Lobster', cursive;
+    --fonte-botao: 'Inter', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {     
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+header {      
+    min-height: 120px;
+    margin-left: 20px;
+    margin-top: 10px;   
+}
+ 
+section {    
+    margin-left: 80px;  
+    padding-left: 80px;
+    display: flex;    
+    align-items: center;    
+}
+#container-a {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: var(--fonte-oscar);
+    color: white;
+}
+
+.btn {
+    background-image: linear-gradient(to bottom, #466BEB , #223564);
+    padding: 10px 8px;
+    margin: 10px 70px;    
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+    width: 300px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;    
+}
+footer {    
+    
+    margin: 15px;
+    padding: 15px;
+    float: right;
+}
+
+/* regras do jogo */
+#rules{
+    height: 360px;
+    width: 500px;
+    border: 1 solid #0D5EA1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    margin: auto;    
+    text-align: center;
+    border-radius: 15px;
+}
+div ol{
+    font-size: 40px;  
+    padding: 20px
+}
+div ol > li{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.5em;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    text-align: justify;
+}
+footer button{    
+    background-color: transparent;
+    border: transparent;    
+}

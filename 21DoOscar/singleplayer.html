@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogador Vs Computador</title>
+    <link rel="stylesheet" href="css/multiplayer.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" rel="next" target="_self"><input type="image" src="img/home1.png" alt="botao home"></a>
+        <a href="menuinicial.html" rel="next" target="_self"><input type="image" src="img/voltar1.png"></a>
+        <a href="singleplayer.html" rel="next" target="_self"><input type="image" src="img/reset1.png"></a>
+    </header>
+    <main>
+        <section class="sec01" id="secao01">
+            <div class="container-a" id="joga1">
+                <p>jogador 1</p>
+                <div class="botao" id="jogad1">
+                    <input id="btn_1" type="submit" value="+1">
+                    <input id="btn_2" type="submit" value="+2">
+                    <input id="btn_3" type="submit" value="+3">
+                </div>
+            </div>
+            <div class="container-a" id="computer">
+                <p>Computador</p>
+                <div class="botao" id="jogad2">
+                    <input id="btn_4" type="submit" value="+1">
+                    <input id="btn_5" type="submit" value="+2">
+                    <input id="btn_6" type="submit" value="+3">
+                </div>
+            </div>
+        </section>
+        <section class="sec02" id="secao02">
+            <div class="container-a">
+                <p>Placar</p>
+                <input class="botao" id="placar" type="submit" value="0">                
+            </div>
+        </section>
+        <div id="vencedor">
+            <img src="img/venceu1.png" alt="vencedor">
+            <h2>Fim de Jogo</h2>
+            <h1>Jogador 1 Venceu</h1>
+        </div>
+        <div id="perdedor">
+            <img src="img/perdeu1.png" alt="perdedor">
+            <h2>Fim de Jogo</h2>
+            <h1>Perdeu</h1>
+        </div>
+        <div id="rules">                
+            <ol>
+                <h1>Regras</h1>
+                <li>Cada jogador só pode escolher os três números a partir do último escolhido.</li>
+                <li> Quem chegar em 21 primeiro vence a partida.</li>
+                <li>Se Escolher um número maior que 21 o jogador perderá a partida.</li>
+                <li> Os números iniciais serão sempre 1, 2 ou 3.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer id="icones">
+        <button type="button" onmouseover="rules()" onmouseout="aparecerules()"><img src="img/regras.png" alt="regras"></button> 
+        <!-- <button id="icon_ranking" type="button"><img src="img/trofeu.png" alt="ranking"></button>  -->
+    </footer>
+
+    <script src="js/singleplayer.js"></script>
+</body>
+
+</html>
