@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu inicial</title>
+    <link rel="stylesheet" href="css/menuinicial.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" rel="next" target="_self"><input type="image" src="img/home1.png" alt="botao home"></a> 
+        <a href="menuinicial.html" rel="next" target="_self"><input type="image" src="img/voltar1.png"></a>       
+    </header>
+    <main>
+        <section >
+            <span id="container-a">
+                <p id="oscar-p">OSCAR</p>
+                <img id="img" src="img/bbmp.png" alt="boneco bbmp">
+            </span> 
+            <span id="container-b">
+                <a href="multiplayer.html"><button class="btn" type="button">Jogador Vs Jogador</button></a>
+                <a href="singleplayer.html"><button class="btn" type="button">Jogador Vs Computador</button></a>
+                <a href="#"><button class="btn" type="button" onclick="rules()">Regras</button></a>
+            </span>
+            <div id="rules">                
+                <ol>
+                    <h1>Regras</h1>
+                    <li>Cada jogador só pode escolher os três números a partir do último escolhido.</li>
+                    <li> Quem chegar em 21 primeiro vence a partida.</li>
+                    <li>Se Escolher um número maior que 21 o jogador perderá a partida.</li>
+                    <li> Os números iniciais serão sempre 1, 2 ou 3.</li>
+                </ol>
+            </div>
+        </section>        
+    </main>
+    <footer>        
+        <a href="ranking.html"><button type="button" ><img src="img/trofeu.png" alt="ranking"></button></a>
+        
+    </footer>
+    <script src="./js/menuinicial.js"></script>
+    
+</body>
+
+</html>
